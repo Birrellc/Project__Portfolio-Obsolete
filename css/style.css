@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Main */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.gradient-text {
+    background: -webkit-linear-gradient(left, #D76EA4, #7A88C8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #000;
+}
+
+.btn-gradient {
+    background: -webkit-linear-gradient(left, #D76EA4, #7A88C8);
+    color: white;
+    border: none;
+}
+
+.social-links {
+    font-size: 1.5rem;
+}
+
+/* Nav */
+
+.navbar {
+    padding: 0 !important;
+    background-color: #fff;
+}
+
+.logo {
+    font-size: 2.5rem !important;
+}
+
+.gradient-nav {
+    background: -webkit-linear-gradient(left, #D76EA4, #7A88C8);
+    color: white;
+    border: none;
+}
+
+.shadow-sm {
+    box-shadow: none !important;
+}
+
+.dropdown-menu {
+    background-color: #fff;
+    text-align: center;
+}
+
+.dropdown-menu li {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.dropdown-menu a {
+    color: #7A88C8;
+}
+
+.dropdown-menu a:hover {
+    background-color: #0a0b11;
+    color: #D76EA4;
+}
+
+/* Home */
+
+.header {
+    font-size: 3rem !important;
+}
+
+.subheader {
+    font-size: 1.5rem !important;
+    font-family: 'Antonio', sans-serif;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-height: 100%;
+    background-color: #fff !important;
+}
+
+/* About */
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-height: 100%;
+    background-color: #0a0b11 !important;
+}
+
+.about-header {
+    font-size: 2.5rem !important;
+}
+
+.about-text {
+    line-height: 2rem;
+    letter-spacing: 2px;
+}
+
+
+/* Projects */
+
+.portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-height: 100%;
+    background-color: #fff !important;
+}
+
+.card {
+    --angle: 0deg;
+    border: #7A88C8 3px solid;
+    border-image: conic-gradient(from var(--angle), #D76EA4, #7A88C8) 1;
+    animation: 7s rotate linear infinite;
+}
+
+.card-body {
+    min-height: 150px;
+}
+
+.card-text {
+    font-size: 0.8rem;
+}
+
+@keyframes rotate {
+    to {
+        --angle: 360deg;
+    }
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+/* Contact */
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-height: 100%;
+    background-color: #0a0b11 !important;
+}
+
+/* Footer */
