@@ -1,4 +1,4 @@
-// Credit - Part of this code is from the code institute course which i have expanded on for my needs.
+// Email Js Contact Form
 
 let formContact = document.getElementById("contactForm");
 formContact.addEventListener("submit", function (e) {
@@ -28,3 +28,15 @@ formContact.addEventListener("submit", function (e) {
     document.getElementById('contactForm').reset();
     return false;
 });
+
+// Scroll Bar Animation
+
+let progressbar = document.getElementById("progressbar")
+let percent = document.getElementById("percent")
+
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function () {
+    let progress = (window.pageYOffset / totalHeight) * 100;
+    progressbar.style.height = progress + "%";
+    percent.innerHTML = Math.round(progress) + "%"
+}

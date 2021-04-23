@@ -2,6 +2,11 @@
 
 /* Main */
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html,
 body {
     scroll-behavior: smooth;
@@ -28,6 +33,75 @@ body {
 
 .social-links {
     font-size: 1.5rem;
+}
+
+/* Scroll Bar */
+
+#scrollpath {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    display: none;
+}
+
+#progressbar {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    width: 10px;
+    background: linear-gradient(to top, #D76EA4, #7A88C8);
+    animation: animate 5s linear infinite;
+    display: none;
+}
+
+#progressbar:before,
+#progressbar:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #D76EA4, #7A88C8);
+    filter: blur(10px);
+}
+
+#progressbar:after {
+    filter: blur(30px);
+}
+
+@keyframes animate {
+    0% {
+        filter: hue-rotate(0deg)
+    }
+
+    50% {
+        filter: hue-rotate(360deg)
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#percent {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%) rotateX(180deg) rotateY(180deg);
+    right: 15px;
+    background: -webkit-linear-gradient(left, #D76EA4, #7A88C8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #000;
+    font-size: 2rem;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    display: none;
 }
 
 /* Nav */
@@ -169,3 +243,20 @@ body {
 }
 
 /* Footer */
+
+
+/* Media Queries */
+
+@media only screen and (min-width: 1200px) {
+    #scrollpath {
+        display: block;
+    }
+
+    #progressbar {
+        display: block;
+    }
+
+    #percent {
+        display: block;
+    }
+}
