@@ -254,7 +254,6 @@ body {
     animation: 7s rotate linear infinite;
     transform-style: preserve-3d;
     perspective: 1000px;
-    background-color: #0a0b11;
 }
 
 .card-body {
