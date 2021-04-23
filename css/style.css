@@ -105,6 +105,56 @@ body {
     z-index: 99999;
 }
 
+/* Scroller Icon */
+
+.scroller {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.scroller span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(to top, #D76EA4, #7A88C8);
+    border-radius: 50%;
+    transform: rotate(45deg);
+    animation: scrollbutton 2s infinite;
+}
+
+.scroller span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.scroller span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+.scroller span:nth-child(4) {
+    animation-delay: -0.6s;
+}
+
+@keyframes scrollbutton {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
 /* Nav */
 
 .navbar {
@@ -258,6 +308,12 @@ body {
     }
 
     #percent {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .scroller {
         display: block;
     }
 }
