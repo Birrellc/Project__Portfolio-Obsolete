@@ -252,13 +252,10 @@ body {
     border: #7A88C8 3px solid;
     border-image: conic-gradient(from var(--angle), #D76EA4, #7A88C8) 1;
     animation: 7s rotate linear infinite;
-    transform-style: preserve-3d;
-    perspective: 1000px;
 }
 
 .card-body {
     min-height: 150px;
-    transform: translateZ(30px)
 }
 
 .card-text {
