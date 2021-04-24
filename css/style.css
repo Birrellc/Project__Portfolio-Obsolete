@@ -259,6 +259,10 @@ body {
     background-color: #0a0b11;
 }
 
+.card-body a {
+    color: #fff;
+}
+
 .card-text {
     font-size: 0.8rem;
 
