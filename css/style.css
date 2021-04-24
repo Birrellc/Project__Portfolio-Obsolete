@@ -260,7 +260,15 @@ body {
 }
 
 .card-body a {
-    color: #fff;
+    color: aliceblue;
+}
+
+.card-body a:hover {
+    background: -webkit-linear-gradient(left, #D76EA4, #7A88C8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #000;
 }
 
 .card-text {
@@ -297,6 +305,14 @@ body {
 
 .contact-social {
     color: aliceblue
+}
+
+.contact-social:hover {
+    background: -webkit-linear-gradient(left, #D76EA4, #7A88C8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #000;
 }
 
 /* Footer */
