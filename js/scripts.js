@@ -42,10 +42,3 @@ window.onscroll = function () {
 }
 
 // used to initilize animate on scroll library
-
-AOS.init({
-    // Global settings:
-    disable: 'phone',
-    easing: 'ease',
-    duration: 2600,
-});
