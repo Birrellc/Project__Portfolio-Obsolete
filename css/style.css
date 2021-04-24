@@ -54,7 +54,7 @@ body {
     right: 0;
     width: 10px;
     background: linear-gradient(to top, #D76EA4, #7A88C8);
-    animation: animate 5s linear infinite;
+    animation: border1 5s linear infinite;
     display: none;
 }
 
@@ -74,7 +74,7 @@ body {
     filter: blur(30px);
 }
 
-@keyframes animate {
+@keyframes border1 {
     0% {
         filter: hue-rotate(0deg)
     }
