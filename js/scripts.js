@@ -46,7 +46,6 @@ window.onscroll = function () {
 AOS.init({
     // Global settings:
     disable: 'phone',
-    startEvent: 'DOMContentLoaded',
     easing: 'ease',
     duration: 2600,
 });
