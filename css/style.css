@@ -256,6 +256,7 @@ body {
 
 .card-body {
     min-height: 150px;
+    background-color: #0a0b11;
 }
 
 .card-text {
